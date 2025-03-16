@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poseidon's Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background: linear-gradient(to bottom, #002f4b, #005f6b);
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .navbar {
+        background: rgba(0, 47, 75, 0.8);
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: #00d4ff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      h1 {
+        text-shadow: 0 0 10px #00d4ff;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .gallery img {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px #00d4ff;
+        transition: transform 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+      .media {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      video, audio {
+        border: 2px solid #00d4ff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/second">← Back to Ocean Depths</a>
+    </div>
+    
+    <h1>Poseidon's Photos</h1>
+    <div class="gallery">
+      <a href="picd.jpg"><img src="picd.jpg" alt="Ocean View"></a>
+      <a href="pice.jpg"><img src="pice.jpg" alt="Waves"></a>
+      <a href="picf.jpg"><img src="picf.jpg" alt="Deep Sea"></a>
+      <a href="picg.jpg"><img src="picg.jpg" alt="Coral Reef"></a>
+      <a href="pich.jpg"><img src="pich.jpg" alt="Mermaid Cove"></a>
+      <a href="pici.jpg"><img src="pici.jpg" alt="Trident's Rest"></a>
+    </div>
+    
+    <h1>Deep Sea Videos</h1>
+    <div class="media">
+      <video width="320" height="240" controls>
+        <source src="vida.mp4" type="video/mp4">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="vidb.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <h1>Oceanic Tunes</h1>
+    <div class="media">
+      <audio controls>
+        <source src="finesse.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="california.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </body>
+</html>

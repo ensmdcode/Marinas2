@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>Πρώτο Τετράμηνο
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1η Τετράμηνο</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cinzel', serif;
+        }
+
+        body {
+            display: flex;
+            background: url('https://www.transparenttextures.com/patterns/marble.png'), #f0f0f0;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(to bottom, #1e3a5f, #0d1b2a);
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+            color: gold;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255, 215, 0, 0.2);
+            color: gold;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid gold;
+        }
+
+        .sidebar li:hover {
+            background: gold;
+            color: #1e3a5f;
+            transform: scale(1.05);
+        }
+
+     a {
+           color: gold; 
+           text-decoration: none;
+           font-weight: bold;
+           transition: all 0.3s ease-in-out;
+       }
+
+       a:hover {
+           color: #ffd700; 
+           text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); 
+           border-bottom: 2px solid gold;
+       }
+
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            width: calc(100% - 270px);
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #1e3a5f;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        h1 {
+            color: #1e3a5f;
+            text-transform: uppercase;
+            border-bottom: 3px solid gold;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .nav-buttons {
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            margin: 10px;
+            padding: 10px 15px;
+            background: #1e3a5f;
+            color: gold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background: gold;
+            color: #1e3a5f;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🏛️ Greek Dashboard</h2>
+        <ul>
+            <li><a href="Index.html">🏺 Home </a></li>
+            <li onclick="showSection('q1')"><a href="first.html">📜 Quarter 1</a></li>
+            <li><a href="second.html">📖 Quarter 2</a></li>
+            <li onclick="showSection('q3')">🏛️ Quarter 3</li>
+            <li onclick="showSection('q4')">⚔️ Quarter 4</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h1>Quarter 1</h1>
+            <div class="nav-buttons">
+                <button onclick="showSection('intro')">About Me</button>
+                <button onclick="showSection('activities')">Activities</button>
+                <button onclick="showSection('reflection')">Reflection</button>
+            </div>
+
+            <div id="intro" class="section active">
+                <h2>About Me</h2>
+                <p><strong>Name:</strong> Baltazar, Jazmin L.</p>
+                <p><strong>Likes:</strong> Greek mythology, music, writing</p>
+                <p><strong>Dislikes:</strong> Loud noises, procrastination</p>
+                <p><strong>Favorite Shows:</strong> Adventure Time, One Piece, Gundam, Voltes V, GTO</p>
+                <p><strong>Favorite Foods:</strong> Pasta, chocolate, sushi</p>
+                <p><strong>Favorite Authors:</strong> Oda Eichiro, Dazai Osamu, Fyodor Dostoevsky, Homer</p>
+            </div>
+
+            <div id="activities" class="section">
+                <h2>Activities</h2>
+                <p>Here are the activities I worked on during Quarter 1:</p>
+                <ul>
+                    <li><a href="table.html"> Table</a></li>
+                    <li><a href="https://profound-sunburst-fc7f46.netlify.app/"> Creating my first webpage</a></li>
+                </ul>
+            </div>
+
+            <div id="reflection" class="section">
+                <h2>Reflection</h2>
+                <p> At first I wanted to re-create every single activity I have ever done in this quarter, so I opened my old portfolio and I couldn't help but smile.
+                    This was the first ever portfolio I made, and yes I know it looks so weird and ugly. Since this is MY work, I didn't want to replace it.
+                    If I could go back in time, I would listen to sir Kinji and miss Uminga to make this better, I only started to fully listen during the third quarter
+                    and gosh I regretted it. I could've done better. So this is me doing better. Full speed ahead peeps! </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

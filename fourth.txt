@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>Τέταρτο Τετράμηνο
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odysseus' Royal Odyssey - My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+        body {
+            font-family: 'Marcellus', serif;
+            background-image: url('blue_gold_palace_bg.jpg');
+            background-size: cover;
+            color: #f4e9d8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .side-nav {
+            background: linear-gradient(180deg, #0a1f44, #09203f);
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            box-shadow: 10px 0 15px rgba(0, 0, 0, 0.7);
+            border-right: 4px solid gold;
+        }
+        .side-nav a {
+            display: block;
+            color: #f4e9d8;
+            text-decoration: none;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.3s;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+        }
+        .side-nav a:hover {
+            background: gold;
+            color: black;
+            border-radius: 5px;
+        }
+        .top-nav {
+            background: linear-gradient(90deg, #0a1f44, #09203f);
+            padding: 15px;
+            width: calc(100% - 250px);
+            position: fixed;
+            top: 0;
+            left: 250px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+            border-bottom: 4px solid gold;
+        }
+        .top-nav a {
+            color: #f4e9d8;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .top-nav a:hover {
+            color: gold;
+            text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+        }
+        .content {
+            max-width: 900px;
+            margin: 140px auto 20px 280px;
+            background: rgba(10, 31, 68, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            border: 3px solid gold;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+        }
+        .media img, .media video {
+            max-width: 100%;
+            margin: 10px 0;
+            border: 6px solid gold;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            text-shadow: 5px 5px 10px black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav">
+        <a href="index.html">👑 Athens</a>
+        <a href="first.html">⚡ Πρώτο Τετράμηνο</a>
+        <a href="second.html">🌊 Δεύτερο Τετράμηνο</a>
+        <a href="third.html">🏹 Τρίτο Τετράμηνο</a>
+        <a href="fourth.html">🌀 Τέταρτο Τετράμηνο</a>
+    </div>
+
+    <div class="top-nav">
+        <a href="#events">🎭 Events</a>
+        <a href="#code-samples">💻 Code Samples</a>
+        <a href="#reflection">📜 Reflection</a>
+    </div>
+
+    <div class="content">
+        <h1>👑 The Royal Odyssey of Odysseus 👑</h1>
+        
+        <h2 id="events">🌟 Grand Events 🌟</h2>
+        <div class="media">
+            <video src="happyme.mov" controls></video>
+            <video src="happybirthd.mp4" controls></video>
+            <video src="happybirthda.mp4" controls></video>
+            <img src="h.jpg" alt="Photo 1">
+            <img src="ha.jpg" alt="Photo 2">
+            <img src="hap.jpg" alt="Photo 3">
+            <img src="happ.jpg" alt="Photo 4">
+            <img src="happy.jpg" alt="Photo 5">
+            <img src="happyb.jpg" alt="Photo 6">
+            <img src="happybi.jpg" alt="Photo 7">
+            <img src="happybir.jpg" alt="Photo 8">
+            <img src="happybirt.jpg" alt="Photo 9">
+            <img src="happybirth.jpg" alt="Photo 10">
+            <img src="happybirthday.jpg" alt="Photo 11">
+        </div>
+        
+        <h2 id="code-samples">💻 Royal Decrees (Code Samples) 💻</h2>
+        <div class="media">
+            <video src="j.mp4" controls></video>
+            <video src="ja.mp4" controls></video>
+            <video src="jaz.mp4" controls></video>
+            <video src="jazm.mp4" controls></video>
+            <video src="jazmi.mp4" controls></video>
+            <img src="jazmin.jpg" alt="Code Sample 1">
+            <img src="jazminl.jpg" alt="Code Sample 2">
+        </div>
+        
+        <h2 id="reflection">📜 The King's Reflection 📜</h2>
+        <p>The fourth quarter was a battlefield, one filled with late nights, deadlines, and performances that pushed us beyond our limits. Like a hero lost at sea, I fought against the tides of assignments, only to ask myself, “Was it worth it?”
+        
+        The answer? Yes. 
+        
+        Through struggles, I found camaraderie. Through challenges, I found growth. “I know that I’m meant for more” echoes in my mind as I navigate this journey, striving to prove that I am stronger than yesterday. The adventures of this quarter, though exhausting, taught me to endure, to learn, and to continue my odyssey, no matter how far from Ithaca I may be.</p>
+    </div>
+</body>
+</html>
